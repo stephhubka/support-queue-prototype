@@ -1,0 +1,75 @@
+export const COLUMNS = [
+  { id: 'new', label: 'NEW', count: 3 },
+  { id: 'needs-response', label: 'NEEDS RESPONSE', count: 1 },
+  { id: 'awaiting-customer', label: 'AWAITING CUSTOMER', count: 0 },
+  { id: 'on-hold', label: 'ON HOLD', count: 1 },
+];
+
+export const CASES = [
+  {
+    id: 'erin-wallace',
+    columnId: 'new',
+    customer: 'Erin Wallace',
+    initials: 'EW',
+    avatar: null,
+    preview:
+      'Hi, I need a copy of my April statement as a PDF for my accountant.',
+    channel: 'Chat',
+    channelVariant: 'chat',
+    updated: '2h ago',
+    urgency: 'fresh',
+  },
+  {
+    id: 'sophia-martinez',
+    columnId: 'new',
+    customer: 'Sophia Martinez',
+    initials: null,
+    avatar: '/assets/avatar-sophia.png',
+    preview:
+      'New address: 2847 Oakwood Drive, Apt 12, Columbus OH 43215.',
+    channel: 'Form',
+    channelVariant: 'form',
+    updated: '5h ago',
+    urgency: 'aging',
+  },
+  {
+    id: 'morgan-e',
+    columnId: 'new',
+    customer: 'Morgan E.',
+    initials: null,
+    avatar: null,
+    outline: true,
+    preview: "hey i'm interested in opening a checking account.",
+    channel: 'Chat',
+    channelVariant: 'chat',
+    updated: '7h ago',
+    urgency: 'aging',
+  },
+  {
+    id: 'ezra-anderson',
+    columnId: 'needs-response',
+    customer: 'Ezra Anderson',
+    initials: null,
+    avatar: '/assets/avatar-ezra.png',
+    preview:
+      "I'm trying to send $3,000 to my daughter for rent but it says I've hit my...",
+    channel: 'Chat',
+    channelVariant: 'chat',
+    updated: '4h ago',
+    urgency: 'fresh',
+  },
+  {
+    id: 'david-kim',
+    columnId: 'on-hold',
+    customer: 'David Kim',
+    company: "Kim's Outdoor Supply Co.",
+    initials: 'DK',
+    avatar: null,
+    preview:
+      "I'm traveling to Germany and France for a trade show next month, Marc...",
+    channel: 'Form',
+    channelVariant: 'form',
+    updated: '5d ago',
+    urgency: 'urgent',
+  },
+];
